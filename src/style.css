@@ -25,5 +25,50 @@ html{
 header{
     width: 100%;
     padding: 60px 4%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: .5s;
+}
 
+header.rolagem{
+    background-color: blue;
+}
+header.rolagem a, header.rolagem i{
+    color: #FE775A;
+}
+
+
+header i{
+    font-size: 30px;
+    color: white;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(resources/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner h1{
+    font-size: 4em;
 }
