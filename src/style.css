@@ -7,6 +7,9 @@
 
 html{
     height: 500vh;
+
+   justify-content: center;
+   align-items: center;
 }
 
 .container{
@@ -72,4 +75,35 @@ header ul li a{
 
 .banner h1{
     font-size: 4em;
+}
+
+
+
+
+.carnesMenu {
+   
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Ajuste a distância entre os itens */
+    padding: 100px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.carnesMenu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: contents;
+}
+
+.carnesMenu li {
+    background-color: #f0f0f0; /* Background color */
+    padding: 20px; /* Padding */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377); /* Box shadow */
+    font-size: 14px; /* Font size */
+    width: 100%; /* Full width of the column */
 }
