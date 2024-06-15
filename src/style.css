@@ -28,14 +28,15 @@ header{
    position: fixed;
    top: 0;
    left: 0;
-   transition: .5s;
+   transition: .7s;
 }
 
 header.rolagem{
-    background-color: blue;
+    background-color: rgba(255, 0, 0, 0.26);
+    padding: 50px 4%;
 }
 header.rolagem a, header.rolagem i{
-    color: #FE775A;
+    color: black;
 }
 
 
