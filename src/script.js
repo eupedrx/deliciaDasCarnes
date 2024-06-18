@@ -22,3 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function() {
+            // Fecha todos os accordions
+            accordions.forEach(acc => {
+                if (acc !== accordion) {
+                    acc.classList.remove('active');
+                    acc.querySelector('.accordion-content').style.display = 'none';
+                }
+            });
+
+            // Abre ou fecha o accordion clicado
+            this.classList.toggle('active');
+            const panel = this.querySelector('.accordion-content');
+            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
