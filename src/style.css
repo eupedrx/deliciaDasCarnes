@@ -27,9 +27,10 @@
   
   .logo {
     background: url(resources/deL.png);
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
+    margin-bottom: 5px;
 }
 
 .navbar {
@@ -38,7 +39,7 @@
     align-items: center;
     font-family: "Kanit", sans-serif;
     background-color: rgba(128, 70, 27, 1);
-    height: 8vh;
+    height: 15vh;
     position: fixed;
     z-index: 9999;
     transition: top 0.3s;
@@ -126,11 +127,13 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-  
       display: flex;
       align-items: center;
       justify-content: center;
   
+  }
+  span{
+    color: red;
   }
   
   .banner h1{
@@ -138,9 +141,7 @@
       font-size: 4em;
   }
   
-  
-  
-  
+  /* Menu Carnes */
   .carnesMenu {
       display: flex;
       flex-wrap: wrap;
@@ -148,8 +149,10 @@
       width: 100%;
       position: relative;
       z-index: 1;
+      margin-top: 100px;
   }
-  
+
+  /* Linhas de divisão do menu */
   .upper-row,
   .lower-row {
       display: flex;
@@ -157,6 +160,7 @@
       justify-content: center;
   }
   
+  /* Configuração dos itens */
   .carne-item {
       position: relative;
       background-image: url('https://static.wixstatic.com/media/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg/v1/fill/w_269,h_248,al_c,lg_1,q_80,enc_auto/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg');
@@ -208,7 +212,54 @@
       background-color: rgba(255, 255, 255, 1); 
   }
   
+
+  /* Accordion */
+
+
+
+  .accordion {
+            background-color: #f1f1f1;
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+        
+        .accordion-header {
+            background-color: #ddd;
+            padding: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .accordion-header::after {
+            content: '\25BC'; /* código da seta direita */
+            font-size: 0.8em;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            transition: transform 0.7s ease;
+        }
+        
+        .accordion.active .accordion-header::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .accordion-content {
+            padding: 10px;
+            display: none;
+        }
   
+
+/* Formulário */
+.form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
   
   /* Rodapé */
   .rodape {
@@ -223,3 +274,5 @@
       margin: 0;
       font-size: 14px;
     }
+
+   
