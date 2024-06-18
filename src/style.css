@@ -1,152 +1,170 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-
-html{
-    height: 500vh;
-    font-family: "Kanit", sans-serif;
-   justify-content: center;
-   align-items: center;
-}
-
-.container{
-
-    max-width: 1280px;
-    margin: auto;
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.logo {
-    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-}
-header{
-    width: 100%;
-    padding: 60px 4%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   transition: .7s;
-}
-
-header.rolagem{
-    background-color: rgba(255, 0, 0, 0.26);
-    padding: 50px 4%;
-}
-header.rolagem a, header.rolagem i{
-    color: black;
-}
-
-
-header i{
-    font-size: 30px;
-    color: white;
-}
-header ul{
-    list-style-type: none;
-}
-header ul li{
-    display: inline-block;
-    margin: 0px 40px;
-}
-
-header ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-.banner{
-    height: 100vh;
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.banner h1{
-    font-size: 4em;
-}
-
-
-
-
-.carnesMenu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.upper-row,
-.lower-row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.carne-item {
-    position: relative;
-    background-image: url('https://static.wixstatic.com/media/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg/v1/fill/w_269,h_248,al_c,lg_1,q_80,enc_auto/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white; /* Text color */
-    font-size: 24px; /* Text size */
-    text-align: center; /* Center text */
-    line-height: 350px; /* Match image height for vertical centering */
-    height: 350px; /* New height */
-    width: calc(30% - 40px); /* 50% da largura da tela menos o espaçamento entre os itens */
-    margin: 10px; /* Espaçamento entre os itens */
-}
-
-.carne-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Sobreposição semi-transparente */
-    z-index: 1; /* Garante que a sobreposição esteja acima da imagem de fundo */
-    transition: opacity 0.3s ease; /* Transição suave ao passar o mouse */
-    opacity: 0; /* Inicialmente oculto */
-}
-
-.carne-item span {
-    position: relative;
-    z-index: 2; /* Garante que o texto esteja acima da sobreposição */
-}
-
-/* Ajuste o tamanho dos ícones */
-.carne-item i {
-    font-size: 48px; /* Tamanho do ícone */
-}
-
-/* Ajuste o estilo dos botões */
-.carne-item button {
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
-    color: #333; /* Cor do texto do botão */
-    font-size: 16px; /* Tamanho do texto do botão */
-    cursor: pointer; /* Mostra o cursor como pointer ao passar o mouse sobre o botão */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-}
-
-.carne-item button:hover {
-    background-color: rgba(255, 255, 255, 1); /* Cor de fundo do botão ao passar o mouse */
-}
+  
+  html{
+      height: 100%;
+      font-family: "Kanit", sans-serif;
+     justify-content: center;
+     align-items: center;
+  }
+  
+  .container{
+  
+      max-width: 1280px;
+      margin: auto;
+  }
+  
+  .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+  }
+  
+  .logo {
+      width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+      height: auto; /* Mantém a proporção da imagem */
+  }
+  header{
+      width: 100%;
+      padding: 20px 4%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transition: .1s;
+     z-index: 10;
+     background-color:        rgba(255, 0, 0, 1);
+  }
+  
+  header.rolagem{
+      background-color: rgba(255, 0, 0, 1);
+      padding: 10px 4%;
+  }
+  header.rolagem a, header.rolagem i{
+      color: black;
+  }
+  
+  
+  header i{
+      font-size: 30px;
+      color: black;
+  }
+  header ul{
+      list-style-type: none;
+  }
+  header ul li{
+      display: inline-block;
+      margin: 0px 40px;
+  }
+  
+  header ul li a{
+      color: black;
+      text-decoration: none;
+  }
+  
+  .banner{
+      height: 100vh;
+      background-image: url();
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  .banner h1{
+      font-size: 4em;
+  }
+  
+  
+  
+  
+  .carnesMenu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .upper-row,
+  .lower-row {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .carne-item {
+      position: relative;
+      background-image: url('https://static.wixstatic.com/media/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg/v1/fill/w_269,h_248,al_c,lg_1,q_80,enc_auto/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white; 
+      font-size: 24px; 
+      text-align: center; 
+      line-height: 350px; 
+      height: 350px; 
+      width: calc(30% - 40px); 
+      margin: 10px; 
+  }
+  
+  .carne-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /*Sobreposição semi-transparente */
+      z-index: 1; 
+      transition: opacity 0.3s ease; 
+      opacity: 0; 
+  }
+  
+  .carne-item span {
+      position: relative;
+      z-index: 2; 
+  }
+  .carne-item i {
+      font-size: 48px; 
+  }
+  
+ 
+  .carne-item button {
+      padding: 10px 20px; 
+      background-color: rgba(255, 255, 255, 0.8); 
+      border: none; 
+      border-radius: 5px; 
+      color: #333; 
+      font-size: 16px; 
+      cursor: pointer; 
+      transition:  0.3s ease; 
+  }
+  
+  .carne-item button:hover {
+      background-color: rgba(255, 255, 255, 1); 
+  }
+  
+  
+  
+  /* Rodapé */
+  .rodape {
+      background-color: #333333;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+  }
+  
+    .rodape p {
+      font-family: "Kanit", sans-serif;
+      margin: 0;
+      font-size: 14px;
+    }
