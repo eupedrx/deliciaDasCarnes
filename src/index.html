@@ -15,8 +15,8 @@
             <div class="logo"></div>
             <ul class="itens">
                 <li><a id='sexo1' href="#">Inicio</a></li>
-                <li><a href="#elenco">Carnes</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#carnesMenu">Carnes</a></li>
+                <li><a href="#rodape">Sobre</a></li>
                 <li><a href="#estatisticas">Localização</a></li>
             </ul>
         </div>
@@ -35,6 +35,78 @@
             <div class="carne-item"><span>Carnes Exóticas</span></div>
             <div class="carne-item"><span>Aves</span></div>
         </div>
+    </section>
+
+    <section class="duvidasFrequentes">
+
+        <div class="accordion">
+            <div class="accordion-header">Seção 1</div>
+            <div class="accordion-content">
+                <p>Conteúdo da seção 1.</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header">Seção 2</div>
+            <div class="accordion-content">
+                <p>Conteúdo da seção 2.</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header">Seção 3</div>
+            <div class="accordion-content">
+                <p>Conteúdo da seção 3.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="form">
+        <form action="processar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Gênero:</label>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="nao_informar" name="genero" value="nao_informar">
+                <label for="nao_informar">Não informar</label>
+            </div>
+            <div class="form-group">
+                <label for="carne_preferida">Carne Preferida:</label>
+                <select id="carne_preferida" name="carne_preferida" required>
+                    <option value="bovina">Bovina</option>
+                    <option value="aves">Aves</option>
+                    <option value="suinas">Suínas</option>
+                    <option value="exoticas">Exóticas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Deseja receber informações por:</label><br>
+                <input type="checkbox" id="todos" name="receber_info[]" value="todos"><br>
+                <label for="todos">Todos os meios</label><br>
+                <input type="checkbox" id="sms" name="receber_info[]" value="sms">
+                <label for="sms">SMS</label><br>
+                <input type="checkbox" id="email_info" name="receber_info[]" value="email">
+                <label for="email_info">Email</label><br>
+                <input type="checkbox" id="ligacao" name="receber_info[]" value="ligacao">
+                <label for="ligacao">Ligação</label><br>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
     </section>
 
     <footer class="rodape">
