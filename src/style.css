@@ -12,6 +12,7 @@
      align-items: center;
      background-image: url('resources/fundo\ cinza.png');
      background-repeat: no-repeat;
+     background-color: #6F4E37;
   }
   
   .container{
@@ -232,19 +233,19 @@
 /* Hoovers */
 .carne:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px #fffefe;
+    box-shadow: 0px 0px 20px #f4d35f;
   }
 .carnePremium:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px #fffefe;
+    box-shadow: 0px 0px 20px #f4d35f;
   }
 .carneExoticas:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px #fffefe;
+    box-shadow: 0px 0px 20px #f4d35f;
   }
   .carneAves:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px #fffefe;
+    box-shadow: 0px 0px 20px #f4d35f;
   }
   .carne-item span {
       position: relative;
@@ -274,24 +275,33 @@
     border-style: solid;
     border-color: black;
     border-radius: 20px;
+    color: white;
   }
 
   /* Accordion */
   .duvidasFrequentes{
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 20px;
     width: 900px;
-    margin-left: 350px;
+    margin-left: 450px;
     background-image: url(resources/fundomadeirada.png);
     border-style: solid;
     border-color: black;
     border-radius: 20px;
+    margin-bottom: 20px;
   }
 
   .h2duvidas{
+    margin-left: 300px;
     margin-top: 2px;
     color: white;
+    background-color: rgba(128, 70, 27, 1);
+    width: 62%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
   }
   .accordion {
             background-color: #f1f1f1;
@@ -333,9 +343,9 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 450px;
     width: 50%;
     background-image: url(resources/fundomadeirada.png);
     border-style: solid;
@@ -344,7 +354,14 @@
 }
 
 .h2form{
-    color: white;
+    margin-left: 300px;
+    background-color: rgba(128, 70, 27, 1);
+        width: 62%;
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        border-radius: 20px;
+       color: white;
 }
   label{
     color: white;
@@ -356,6 +373,9 @@
         position: relative;
         max-width: 850px;
         width: 100%;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
     }
     
     .carousel-inner {
@@ -394,14 +414,22 @@
         right: 0;
     }
 
-
+  /* Mapa */
     .mapada{
-        margin-top: 50px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
+        margin-top: 20px;
     }
 
+    .h2loc{
+        margin-left: 300px;
+        color: white;
+        background-color: rgba(128, 70, 27, 1);
+        width: 62%;
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 
       /* Rodapé */
   .rodape {
