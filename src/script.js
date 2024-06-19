@@ -73,3 +73,21 @@ setInterval(() => {
 }, 3000);
 
 showSlide(currentIndex);
+
+
+// Radio Button
+
+
+const customRadios = document.querySelectorAll('.custom-radio input[type="radio"]');
+customRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+        // Resetar todos os checkmarks
+        document.querySelectorAll('.custom-radio .checkmark').forEach(checkmark => {
+            checkmark.style.backgroundColor = '#eee';
+        });
+        // Aplicar cor ao checkmark selecionado
+        if (this.checked) {
+            this.nextElementSibling.style.backgroundColor = '#2196F3';
+        }
+    });
+});
