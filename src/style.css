@@ -10,6 +10,7 @@
       font-family: "Kanit", sans-serif;
      justify-content: center;
      align-items: center;
+     background-image: url('');
   }
   
   .container{
@@ -123,14 +124,13 @@
   
   .banner{
       height: 70vh;
-      background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230512/pngtree-different-cuts-of-meat-on-display-in-a-butcher-shop-image_2505747.jpg);
+      background-image: url();
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
-  
   }
   span{
     color: red;
@@ -149,7 +149,7 @@
       width: 100%;
       position: relative;
       z-index: 1;
-      margin-top: 100px;
+      margin-top: 200px;
   }
 
   /* Linhas de divisão do menu */
@@ -161,33 +161,92 @@
   }
   
   /* Configuração dos itens */
-  .carne-item {
+  .carne {
       position: relative;
-      background-image: url('https://static.wixstatic.com/media/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg/v1/fill/w_269,h_248,al_c,lg_1,q_80,enc_auto/d35ee1_5a74c8be9b9640e4a2cf122cea66123b~mv2.jpg');
+      background-image: url('resources/fundomadeirada.png');
       background-size: cover;
       background-position: center;
       color: white; 
       font-size: 24px; 
       text-align: center; 
-      line-height: 350px; 
+      line-height: 290px; 
       height: 280px; 
       width: calc(30% - 40px); 
-      margin: 10px; 
+      margin: 20px;
+     border-style: solid;
+     border-color: black;
+     border-radius: 20px;
   }
-  
-  .carne-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /*Sobreposição semi-transparente */
-      z-index: 1; 
-      transition: opacity 0.3s ease; 
-      opacity: 0; 
+  .carnePremium {
+    position: relative;
+    background-image: url('resources/fundomadeirada.png');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    line-height: 290px; 
+    height: 280px; 
+    width: calc(30% - 40px); 
+    margin: 20px;
+    border-style: solid;
+     border-color: black;
+     border-radius: 20px;
+}
+.carneExoticas {
+    position: relative;
+    background-image: url('resources/fundomadeirada.png');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    line-height: 290px; 
+    height: 280px; 
+    width: calc(30% - 40px); 
+    margin: 20px;
+    border-style: solid;
+     border-color: black;
+     border-radius: 20px;
+}
+.carneAves {
+    position: relative;
+      background-image: url('resources/fundomadeirada.png');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    line-height: 290px; 
+    height: 280px; 
+    width: calc(30% - 40px); 
+    margin: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+/* Hoovers */
+.carne:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #ff0000;
   }
-  
+.carnePremium:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #ff0000;
+  }
+.carnePremium:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #ff0000;
+  }
+.carneExoticas:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #ff0000;
+  }
+  .carneAves:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #ff0000;
+  }
   .carne-item span {
       position: relative;
       z-index: 2; 
@@ -195,8 +254,6 @@
   .carne-item i {
       font-size: 48px; 
   }
-  
- 
   .carne-item button {
       padding: 10px 20px; 
       background-color: rgba(255, 255, 255, 0.8); 
@@ -207,17 +264,22 @@
       cursor: pointer; 
       transition:  0.3s ease; 
   }
-  
   .carne-item button:hover {
       background-color: rgba(255, 255, 255, 1); 
   }
-  
+  .h2carnes{
+    background-color: rgba(128, 70, 27, 1);
+    width: 62%;
+    text-align: center;
+  }
 
   /* Accordion */
-
-
   .duvidasFrequentes{
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
+    width: 900px;
+    margin-left: 500px;
   }
   .accordion {
             background-color: #f1f1f1;
@@ -278,3 +340,48 @@
     }
 
    
+
+ /* Carroussel */
+    .carousel {
+        margin-top: 200px;
+        display: block;
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        display: block;
+    }
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
