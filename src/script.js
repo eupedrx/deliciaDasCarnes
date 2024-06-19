@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function(){
-    let header = document.querySelector('#header')
+    let header = document.querySelector('#navbar')
     header.classList.toggle('rolagem', window.scrollY > 500)
 })
 
