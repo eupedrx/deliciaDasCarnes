@@ -24,24 +24,28 @@
             </ul>
         </div>
     </header>
-
-    <section class="banner">
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="resources/Imagem 1 Carrousel.png" alt="Imagem 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="resources/Imagem 2 Carrousel.png" alt="Imagem 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="resources/Imagem 3 Carrousel.png" alt="Imagem 3">
-                </div>
+<!-- Carrousel -->
+<section class="bannerC">
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="resources/Imagem1Carrousel.png" alt="Imagem 1">
             </div>
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <div class="carousel-item">
+                <img src="resources/Imagem2Carrousel.png" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/Imagem3Carrousel.png" alt="Imagem 3">
+            </div>
         </div>
-    </section>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+ </section>
+<!--  -->
+<section class="banner">
+    
+</section>
 
 <!-- Menu das Carnes -->
     <section class="carnesMenu">
@@ -118,14 +122,22 @@
             </div>
             <div class="form-group">
                 <label>Deseja receber informações por:</label><br>
-                <input type="checkbox" id="todos" name="receber_info[]" value="todos">
-                <label for="todos">Todos os meios</label><br>
-                <input type="checkbox" id="sms" name="receber_info[]" value="sms">
-                <label for="sms">SMS</label><br>
-                <input type="checkbox" id="email_info" name="receber_info[]" value="email">
-                <label for="email_info">Email</label><br>
-                <input type="checkbox" id="ligacao" name="receber_info[]" value="ligacao">
-                <label for="ligacao">Ligação</label><br>
+                <label class="custom-radio">Todos os Meios
+                    <input type="radio" name="opcao" value="opcao1">
+                    <span class="checkmark"></span>
+                  </label><br>
+                  <label class="custom-radio">SMS
+                    <input type="radio" name="opcao" value="opcao2">
+                    <span class="checkmark"></span>
+                  </label><br>
+                  <label class="custom-radio">Email
+                    <input type="radio" name="opcao" value="opcao3">
+                    <span class="checkmark"></span>
+                  </label> <br>
+                  <label class="custom-radio">Ligação
+                    <input type="radio" name="opcao" value="opcao3">
+                    <span class="checkmark"></span>
+                  </label>
             </div>
             <button type="submit">Cadastrar</button>
         </form>
