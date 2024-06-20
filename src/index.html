@@ -48,15 +48,13 @@
 </section>
 
 <!-- Menu das Carnes -->
+
     <section class="carnesMenu">
         <div class="h2carnes"><h2 >Escolha a sua preferência</h2></div>
         <div class="upper-row">
             <div class="carne"><P>Carnes</P></div>
-            <div class="carnePremium"><P>Carnes Premium</P>></div>
-        </div>
-        <div class="lower-row">
             <div class="carneExoticas"><p>Carnes Exóticas</p></div>
-            <div class="carneAves"><p>Carnes Brancas</p></div>
+            <div class="carnePremium"><P>Carnes Brancas </P></div>
         </div>
     </section>
 
@@ -88,8 +86,7 @@
 
 <!-- Formucria-->
 <div><h2 class="h2form">Formulário</h2></div>
-    <section class="form">
-        
+    <section class="form"> 
         <form action="processar_formulario.php" method="post">
             <div class="form-group">
                 <label for="nome">Nome:</label>
@@ -114,12 +111,20 @@
             </div>
             <div class="form-group">
                 <label for="carne_preferida">Carne Preferida:</label>
-                <select id="carne_preferida" name="carne_preferida" required>
-                    <option value="bovina">Bovina</option>
-                    <option value="aves">Aves</option>
-                    <option value="suinas">Suínas</option>
-                    <option value="exoticas">Exóticas</option>
-                </select>
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        
+<div class="custom-select" id="carnePreferidaSelect">
+    <div class="custom-select-trigger" id="carne_preferida">Selecione uma carne<span class="arrow"></span></div>
+    <div class="custom-options">
+        <div class="custom-option" data-value="bovina">Bovina</div>
+        <div class="custom-option" data-value="aves">Aves</div>
+        <div class="custom-option" data-value="suinas">Suínas</div>
+        <div class="custom-option" data-value="exoticas">Exóticas</div>
+    </div>
+</div>
+<input type="hidden" name="carne_preferida" id="carne_preferida_value" required>
+
             </div>
             <div class="form-group">
                 <label>Deseja receber informações por:</label><br>
