@@ -91,3 +91,32 @@ customRadios.forEach(radio => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const selectTrigger = document.getElementById('carne_preferida');
+    const customSelect = document.getElementById('carnePreferidaSelect');
+    const optionsList = document.querySelector('.custom-options');
+    const arrow = document.querySelector('.arrow');
+
+    selectTrigger.addEventListener('click', function() {
+        customSelect.classList.toggle('open');
+        optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+        arrow.style.transform = customSelect.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0)';
+    });
+
+    optionsList.addEventListener('click', function(event) {
+        if (event.target.classList.contains('custom-option')) {
+            const selectedValue = event.target.getAttribute('data-value');
+            const selectedText = event.target.textContent;
+            selectTrigger.textContent = selectedText;
+            document.getElementById('carne_preferida_value').value = selectedValue;
+            customSelect.classList.remove('open');
+            optionsList.style.display = 'none';
+        }
+    });
+
+    selectTrigger.addEventListener('click', function() {
+        arrow.style.transform = 'rotate(180deg)';
+    });
+});
